@@ -1,0 +1,20 @@
+{
+    "name": "mmo/coding-standards",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mmo\\CodingStandards\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcin Morawski",
+            "email": "marcin@morawskim.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.8"
+    }
+}
