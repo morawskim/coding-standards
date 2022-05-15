@@ -1,6 +1,6 @@
 <?php
 
-$config = PhpCsFixer\Config::create()
+$config = (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules([
         '@PSR12' => true,
@@ -12,11 +12,6 @@ $config = PhpCsFixer\Config::create()
         'function_typehint_space' => true,
         'phpdoc_separation' => true,
     ])
-    ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->in(__DIR__.'/src')
-            ->name('*.php')
-    )
 ;
 
 return $config;
